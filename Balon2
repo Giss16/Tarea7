@@ -1,0 +1,16 @@
+import java.awt.*;
+public class Balon2 {
+    public static void main(String[] args) {
+        Balon balon = new Balon("Pequeño", 20, Color.green, "Tenis");
+        Balon balon1 = new Balon();
+        balon1.setTamaño("pequeño");
+        balon1.setRebotes(14);
+        balon1.setColor(Color.BLACK);
+        balon1.setTipo("Futbol");
+        System.out.println(balon);
+        System.out.println(balon1);
+        balon.grande();
+        balon.rebote();
+        balon1.futbol();
+    }
+}

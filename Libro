@@ -1,0 +1,71 @@
+public class Libro {
+    private String paginas;
+    private String genero;
+    private String tamaño;
+    private String autor;
+
+    public Libro() {
+
+    }
+
+    public Libro(String paginas, String genero, String tamaño, String autor) {
+        this.paginas = paginas;
+        this.genero = genero;
+        this.tamaño = tamaño;
+        this.autor = autor;
+    }
+
+    public String getPaginas() {
+        return paginas;
+    }
+
+    public void setPaginas(String paginas) {
+        this.paginas = paginas;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public String getTamaño() {
+        return tamaño;
+    }
+
+    public void setTamaño(String tamaño) {
+        this.tamaño = tamaño;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    @Override
+    public String toString() {
+        return "Libro{" +
+                "paginas='" + paginas + '\'' +
+                ", genero='" + genero + '\'' +
+                ", tamaño='" + tamaño + '\'' +
+                ", autor='" + autor + '\'' +
+                '}';
+    }
+    public void leer(){
+        paginas = "leer";
+        System.out.println("Quisiste comenzar con es libro que tanto te gusta y decidiste  " + paginas + " 100 paginas!!!");
+    }
+    public void genero(){
+        genero = "romance";
+        System.out.println("Elegiste un buen libro de la biblioteca, y es del genero de " + genero + "suena interesante :3");
+    }
+    public void autor(){
+        autor = "Gabriel GM";
+        System.out.println("Dicen que este autor es muy bueno con lo que escribe, deberías de leer algún libro de " + autor);
+    }
+}

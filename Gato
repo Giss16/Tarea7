@@ -1,0 +1,71 @@
+import java.awt.*;
+public class Gato {
+    private Color color;
+    private String tamaño;
+    private String tipo;
+    private String nombre;
+
+    public Gato() {
+    }
+
+    public Gato(Color color, String tamaño, String tipo, String nombre) {
+        this.color = color;
+        this.tamaño = tamaño;
+        this.tipo = tipo;
+        this.nombre = nombre;
+    }
+
+    public Color getColor() {
+        return color;
+    }
+
+    public void setColor(Color color) {
+        this.color = color;
+    }
+
+    public String getTamaño() {
+        return tamaño;
+    }
+
+    public void setTamaño(String tamaño) {
+        this.tamaño = tamaño;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    @Override
+    public String toString() {
+        return "Gato{" +
+                "color=" + color +
+                ", tamaño='" + tamaño + '\'' +
+                ", tipo='" + tipo + '\'' +
+                ", nombre='" + nombre + '\'' +
+                '}';
+    }
+    public void gris(){
+        color = Color.DARK_GRAY;
+        System.out.println("Mi gatito " + nombre + " es de color " + color);
+    }
+    public void hogareño(){
+        tipo = "hogareño";
+        System.out.println(nombre + " es muy " + tipo + " por lo que él siempre esta en la casa :3");
+    }
+    public void mediano(){
+        tamaño = "mediano";
+        System.out.println(nombre + " es un gato " + tamaño);
+    }
+}

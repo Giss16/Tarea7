@@ -1,0 +1,74 @@
+public class Computadora {
+    private String ssd;
+    private String ram;
+    private String monitor;
+    private String estado;
+
+    public Computadora() {
+
+    }
+    public Computadora( String ssd, String ram, String monitor, String estado){
+            this.ssd = ssd;
+            this.ram = ram;
+            this.monitor = monitor;
+            this.estado = estado;
+        }
+
+    public String getSsd() {
+        return ssd;
+    }
+
+    public void setSsd(String ssd) {
+        this.ssd = ssd;
+    }
+
+    public String getRam() {
+        return ram;
+    }
+
+    public void setRam(String ram) {
+        this.ram = ram;
+    }
+
+    public String getMonitor() {
+        return monitor;
+    }
+
+    public void setMonitor(String monitor) {
+        this.monitor = monitor;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
+    @Override
+    public String toString() {
+        return "Computadora{" +
+                "ssd=" + ssd +
+                ", ram='" + ram + '\'' +
+                ", monitor='" + monitor + '\'' +
+                ", estado='" + estado + '\'' +
+                '}';
+    }
+    public void memoria(){
+        ssd = "120GB";
+        System.out.println("La computadora tiene un sdd de " + ssd);
+    }
+    public void ram(){
+        ram = "24GB";
+        System.out.println("La computadora contiene una memoria ram con capacidad de " + ram);
+    }
+    public void apagada(){
+        estado = "apagada";
+        System.out.println("La computadora se encuentra " + estado);
+    }
+    public void encendida(){
+        estado = "encendida";
+        System.out.println("La computadora se encuentra " + estado);
+    }
+}

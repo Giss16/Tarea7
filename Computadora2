@@ -1,0 +1,16 @@
+public class Computadora2 {
+    public static void main(String[] args) {
+        Computadora computadora = new Computadora("480GB", "24GB", "144hz", "Encendida");
+      Computadora computadora1 = new Computadora();
+        System.out.println(computadora);
+        computadora.setSsd("120GB");
+        computadora.setRam("16GB");
+        computadora.setMonitor("74hz");
+        computadora.setEstado("Apagada");
+        System.out.println(computadora);
+        computadora.memoria();
+        computadora1.ram();
+        computadora.apagada();
+        computadora1.encendida();
+        }
+    }

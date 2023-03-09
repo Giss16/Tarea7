@@ -1,0 +1,73 @@
+import java.awt.*;
+public class Lampara {
+    private String tamaño;
+    private String tipo;
+    private Color luz;
+    private double tiempo;
+public Lampara(){
+
+}
+    public Lampara(String tamaño, String tipo, Color luz, double tiempo) {
+        this.tamaño = tamaño;
+        this.tipo = tipo;
+        this.luz = luz;
+        this.tiempo = tiempo;
+    }
+
+    public String getTamaño() {
+        return tamaño;
+    }
+
+    public void setTamaño(String tamaño) {
+        this.tamaño = tamaño;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public Color getLuz() {
+        return luz;
+    }
+
+    public void setLuz(Color luz) {
+        this.luz = luz;
+    }
+
+    public double getTiempo() {
+        return tiempo;
+    }
+
+    public void setTiempo(double tiempo) {
+        this.tiempo = tiempo;
+    }
+
+    @Override
+    public String toString() {
+        return "Lampara{" +
+                "tamaño='" + tamaño + '\'' +
+                ", tipo='" + tipo + '\'' +
+                ", luz=" + luz +
+                ", tiempo=" + tiempo +
+                '}';
+    }
+    public void pequeña(){
+        tamaño = "pequeña";
+        System.out.println("La lampara es " + tamaño + " asi que funciona para ponerla en cualquier lado :D");
+    }
+    public void cocina(){
+        tipo = "cocina";
+        System.out.println("Esta lampara es lo mejor para la " + tipo);
+    }
+    public void tiempo(){
+    tiempo = 20;
+    }
+    public void luz(){
+        luz = Color.ORANGE;
+        System.out.println("La lampara tiene una luz " + luz + "que dura más de " + tiempo + " hrs!!!");
+    }
+}

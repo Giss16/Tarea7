@@ -1,0 +1,16 @@
+import java.awt.*;
+public class Lampara2 {
+    public static void main(String[] args) {
+        Lampara lampara = new Lampara("Larga", "Sala de estar", Color.WHITE,12);
+        Lampara lampara1 = new Lampara();
+        lampara1.setTamaño("Chica");
+        lampara1.setTipo("De noche");
+        lampara1.setLuz(Color.ORANGE);
+        lampara1.setTiempo(10);
+        System.out.println(lampara);
+        System.out.println(lampara1);
+        lampara.pequeña();
+        lampara.cocina();
+        lampara1.luz();
+    }
+}

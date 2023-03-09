@@ -1,0 +1,77 @@
+import java.awt.*;
+public class Giroscopio {
+    private String girar;
+    private String direccion;
+    private String estado;
+    private Color color;
+
+    public Giroscopio(String girar, String direccion, String estado, Color color) {
+        this.girar = girar;
+        this.direccion = direccion;
+        this.estado = estado;
+        this.color = color;
+    }
+
+    public String getGirar() {
+        return girar;
+    }
+
+    public void setGirar(String girar) {
+        this.girar = girar;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
+    public Color getColor() {
+        return color;
+    }
+
+    public void setColor(Color color) {
+        this.color = color;
+    }
+
+    public Giroscopio() {
+
+    }
+
+    @Override
+    public String toString() {
+        return "Giroscopio{" +
+                "girar='" + girar + '\'' +
+                ", direccion='" + direccion + '\'' +
+                ", estado='" + estado + '\'' +
+                ", color=" + color +
+                '}';
+    }
+
+    public void direccion() {
+        direccion = "derecha";
+        System.out.println("El giroscopio " + girar + " hacia la " + direccion);
+    }
+        public void girar() {
+            girar = "girar";
+            System.out.println("El giroscopio puede " + girar);
+        }
+        public void girando(){
+        estado = "girando";
+            System.out.println("El giroscopio se encuentra " + estado);
+        }
+    public void detenido() {
+        estado = "detenido";
+        System.out.println("El giroscopio se encuentra " + estado);
+    }
+    }

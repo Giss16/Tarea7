@@ -1,0 +1,17 @@
+import java.awt.*;
+
+public class Giroscopio2 {
+        public static void main(String[] args) {
+            Giroscopio giroscopio1 = new Giroscopio();
+            Giroscopio giroscopio2 = new Giroscopio("No gira", "Derecha", "detenido", Color.DARK_GRAY);
+            giroscopio1.setGirar("Gira");
+            giroscopio1.setDireccion("Izquierda");
+            giroscopio1.setEstado("Quieto");
+            giroscopio1.setColor(Color.CYAN);
+            System.out.println(giroscopio1.toString());
+            System.out.println(giroscopio2.toString());
+           giroscopio1.direccion();
+            giroscopio1.girando();
+            giroscopio2.detenido();
+        }
+    }

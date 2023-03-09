@@ -1,0 +1,71 @@
+public class Pais {
+    private String continente;
+    private String idioma;
+    private String nombre;
+    private String capital;
+
+    public Pais() {
+
+    }
+
+    public Pais(String continente, String idioma, String nombre, String capital) {
+        this.continente = continente;
+        this.idioma = idioma;
+        this.nombre = nombre;
+        this.capital = capital;
+    }
+
+    public String getContinente() {
+        return continente;
+    }
+
+    public void setContinente(String continente) {
+        this.continente = continente;
+    }
+
+    public String getIdioma() {
+        return idioma;
+    }
+
+    public void setIdioma(String idioma) {
+        this.idioma = idioma;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    public String getCapital() {
+        return capital;
+    }
+
+    public void setCapital(String capital) {
+        this.capital = capital;
+    }
+
+    @Override
+    public String toString() {
+        return "Pais{" +
+                "continente='" + continente + '\'' +
+                ", idioma='" + idioma + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", capital='" + capital + '\'' +
+                '}';
+    }
+
+    public void continente() {
+        continente = continente;
+        System.out.println(nombre + " se encuentra en el continente de " + continente);
+    }
+    public void idioma(){
+        idioma = idioma;
+        System.out.println("En " + nombre + " hablan en " + idioma);
+    }
+    public void capital(){
+        capital = capital;
+        System.out.println("La capital de " + nombre + " es " + capital);
+}
+}

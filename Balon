@@ -1,0 +1,74 @@
+import java.awt.*;
+public class Balon {
+    private String tamaño;
+    private int rebotes;
+    private Color color;
+    private String tipo;
+    public Balon() {
+
+    }
+    public Balon(String tamaño, int rebotes, Color color, String tipo) {
+        this.tamaño = tamaño;
+        this.rebotes = rebotes;
+        this.color = color;
+        this.tipo = tipo;
+    }
+
+    public String getTamaño() {
+        return tamaño;
+    }
+
+    public void setTamaño(String tamaño) {
+        this.tamaño = tamaño;
+    }
+
+    public int getRebotes() {
+        return rebotes;
+    }
+
+    public void setRebotes(int rebotes) {
+        this.rebotes = rebotes;
+    }
+
+    public Color getColor() {
+        return color;
+    }
+
+    public void setColor(Color color) {
+        this.color = color;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    @Override
+    public String toString() {
+        return "Balon{" +
+                "tamaño='" + tamaño + '\'' +
+                ", rebotes=" + rebotes +
+                ", color=" + color +
+                ", tipo='" + tipo + '\'' +
+                '}';
+    }
+    public void grande(){
+        tamaño = "grande";
+        System.out.println("El balon es " + tamaño);
+    }
+    public void rebote(){
+        rebotes = 15;
+        System.out.println("El balon pudo rebotar " + rebotes + " veces!!");
+    }
+    public void basket(){
+        tipo = "basket";
+        System.out.println("El balon es para jugar " + tipo);
+    }
+    public void futbol(){
+        tipo = "futbol";
+        System.out.println("El balon es de "+ tipo);
+    }
+}

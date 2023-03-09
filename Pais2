@@ -1,0 +1,15 @@
+public class Pais2 {
+    public static void main(String[] args) {
+Pais pais1 = new Pais();
+Pais pais2 = new Pais("Europa", "Francia", "Francés", "París");
+pais1.setContinente("Oceanía");
+pais1.setNombre("Australia");
+pais1.setIdioma("inglés");
+pais1.setCapital("Canberra");
+        System.out.println(pais1.toString());
+        System.out.println(pais2.toString());
+        pais1.continente();
+        pais1.capital();
+        pais1.idioma();
+    }
+}

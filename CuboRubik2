@@ -1,0 +1,17 @@
+import java.awt.*;
+
+public class CuboRubik2 {
+    public static void main(String[] args) {
+        CuboRubik cuboRubik = new CuboRubik("Grande", Color.CYAN, "30", "armado");
+        CuboRubik cuboRubik1 = new CuboRubik();
+        cuboRubik1.setTamaño("Mediano");
+        cuboRubik1.setColor(Color.blue);
+        cuboRubik1.setMovimientos("8");
+        cuboRubik1.setEstado("Armado");
+        System.out.println(cuboRubik);
+        System.out.println(cuboRubik1);
+cuboRubik.tamaño();
+cuboRubik1.nummovimientos();
+cuboRubik.noterminado();
+    }
+}

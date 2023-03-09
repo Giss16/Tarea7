@@ -1,0 +1,77 @@
+import java.awt.*;
+public class CuboRubik {
+    private String tamaño;
+    private Color color;
+    private String movimientos;
+    private String estado;
+    public CuboRubik() {
+    }
+    public CuboRubik(String tamaño, Color color, String movimientos, String estado) {
+        this.tamaño = tamaño;
+        this.color = color;
+        this.movimientos = movimientos;
+        this.estado = estado;
+    }
+
+    public String getTamaño() {
+        return tamaño;
+    }
+
+    public void setTamaño(String tamaño) {
+        this.tamaño = tamaño;
+    }
+
+    public Color getColor() {
+        return color;
+    }
+
+    public void setColor(Color color) {
+        this.color = color;
+    }
+
+    public String getMovimientos() {
+        return movimientos;
+    }
+
+    public void setMovimientos(String movimientos) {
+        this.movimientos = movimientos;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
+    @Override
+    public String toString() {
+        return "CuboRubik{" +
+                "tamaño='" + tamaño + '\'' +
+                ", color=" + color +
+                ", movimientos=" + movimientos +
+                ", estado='" + estado + '\'' +
+                '}';
+    }
+    public void tamaño(){
+        tamaño = "Pequeño";
+        System.out.println("El cubo es " + tamaño);
+    }
+    public void color(){
+        color = Color.BLACK;
+        System.out.println("El cubo es de color " + color + "con las piezas rojas, verdes, blancas, amarillas y naranjas");
+    }
+    public void nummovimientos(){
+        movimientos = "15";
+        System.out.println("Para intenmtar armar el cubo se usaron " + movimientos + " movimientos");
+    }
+    public void armado(){
+        estado = "armado";
+        System.out.println("El cubo está " +  estado);
+    }
+    public void noterminado(){
+        estado = "no armado";
+        System.out.println("El cubo " + estado + " se encuentra incompleto");
+    }
+}

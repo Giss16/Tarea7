@@ -1,0 +1,15 @@
+public class Libro2 {
+    public static void main(String[] args) {
+        Libro libro = new Libro("lei", "Terror", "Pequeño", "Victor Hugo");
+        Libro libro1 = new Libro();
+libro1.setPaginas("No lei");
+libro1.setGenero("Suspenso");
+libro1.setTamaño("pequeño");
+libro1.setAutor("Octavio Paz");
+        System.out.println(libro);
+        System.out.println(libro1);
+        libro1.leer();
+        libro.genero();
+        libro.autor();
+    }
+}
